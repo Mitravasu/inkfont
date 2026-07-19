@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Export SVG Font</name>
+    <id>org.inkfont.export_svg_font</id>
+    <param name="command" type="string" gui-hidden="true">export_svg_font</param>
+    <param name="family" type="string" gui-text="Font family:">NewFont</param>
+    <param name="copyright" type="string" gui-text="Copyright:"></param>
+    <param name="weight" type="string" gui-text="Weight:">regular</param>
+    <param name="italic" type="bool" gui-text="Italic">false</param>
+    <param name="default_advance" type="int" min="1" max="10000" gui-text="Default advance width:">1000</param>
+    <param name="em_size" type="int" min="0" max="10000" gui-text="Em size override (0 = read from doc):">0</param>
+    <param name="output_path" type="path" gui-text="Output SVG font file:" mode="file_new">typeface.svg</param>
+    <effect needs-live-preview="false">
+        <effects-menu>
+            <submenu name="InkFont"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">inkfont.py</command>
+    </script>
+</inkscape-extension>

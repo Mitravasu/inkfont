@@ -1,0 +1,1 @@
+"""Tests for Typeface Builder. Run without inkex installed."""

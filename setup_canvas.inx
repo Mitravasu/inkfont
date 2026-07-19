@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Setup Canvas</name>
+    <id>org.inkfont.setup_canvas</id>
+    <param name="command" type="string" gui-hidden="true">setup_canvas</param>
+    <spacer/>
+    <label appearance="header">Em square</label>
+    <param name="em_size" type="int" min="100" max="10000" gui-text="Em size (font units):">1000</param>
+    <spacer/>
+    <label appearance="header">Vertical metrics</label>
+    <param name="cap_height" type="int" min="0" max="2000" gui-text="Cap height:">700</param>
+    <param name="x_height" type="int" min="0" max="2000" gui-text="x-height:">500</param>
+    <param name="ascender" type="int" min="0" max="2000" gui-text="Ascender:">800</param>
+    <param name="descender" type="int" min="0" max="2000" gui-text="Descender (positive):">200</param>
+    <spacer/>
+    <label appearance="header">Side bearings</label>
+    <param name="left_bearing" type="int" min="0" max="5000" gui-text="Left side bearing:">100</param>
+    <param name="right_bearing" type="int" min="0" max="5000" gui-text="Right side bearing:">100</param>
+    <param name="add_side_guides" type="bool" gui-text="Add left/right side-bearing guides">true</param>
+    <spacer/>
+    <effect needs-live-preview="false">
+        <effects-menu>
+            <submenu name="InkFont"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">inkfont.py</command>
+    </script>
+</inkscape-extension>

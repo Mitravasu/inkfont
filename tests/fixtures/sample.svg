@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <sodipodi:namedview id="namedview">
+    <sodipodi:guide position="0,200" orientation="0,-1" inkscape:label="baseline"/>
+    <sodipodi:guide position="0,700" orientation="0,-1" inkscape:label="x-height"/>
+    <sodipodi:guide position="0,900" orientation="0,-1" inkscape:label="cap-height"/>
+    <sodipodi:guide position="0,0" orientation="0,-1" inkscape:label="descender"/>
+    <sodipodi:guide position="0,1000" orientation="0,-1" inkscape:label="ascender"/>
+  </sodipodi:namedview>
+  <!-- glyph_A: one built path (triangle + crossbar, 2 subpaths) + template_base rect -->
+  <g inkscape:groupmode="layer" inkscape:label="glyph_A" style="display:none">
+    <path inkscape:label="template_base" d="M 0 0 L 500 0 L 500 1000 L 0 1000 Z" fill="none" stroke="gray"/>
+    <path d="M 100 800 L 200 100 L 300 800 Z M 150 500 L 250 500" fill="black"/>
+  </g>
+  <!-- glyph_i: two built paths (stem + dot) + template_base rect -->
+  <g inkscape:groupmode="layer" inkscape:label="glyph_i" style="display:none">
+    <path inkscape:label="template_base" d="M 0 0 L 500 0 L 500 1000 L 0 1000 Z" fill="none" stroke="gray"/>
+    <path d="M 460 300 L 540 300 L 540 800 L 460 800 Z" fill="black"/>
+    <path d="M 460 100 L 540 100 L 540 200 L 460 200 Z" fill="black"/>
+  </g>
+</svg>

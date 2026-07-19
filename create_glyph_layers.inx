@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Create Glyph Layers</name>
+    <id>org.inkfont.create_glyph_layers</id>
+    <param name="command" type="string" gui-hidden="true">create_glyph_layers</param>
+    <param name="preset" type="optiongroup" appearance="combo" gui-text="Character set:">
+        <option value="Uppercase">Uppercase A–Z</option>
+        <option value="Lowercase">Lowercase a–z</option>
+        <option value="Digits">Digits 0–9</option>
+        <option value="Coding — core">Coding — core</option>
+        <option value="Coding — extended">Coding — extended</option>
+        <option value="Custom">Custom</option>
+    </param>
+    <param name="custom_chars" type="string" gui-text="Custom characters:"></param>
+    <param name="copy_base" type="bool" gui-text="Copy current selection as base shape into each layer">true</param>
+    <effect needs-live-preview="false">
+        <effects-menu>
+            <submenu name="InkFont"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">inkfont.py</command>
+    </script>
+</inkscape-extension>

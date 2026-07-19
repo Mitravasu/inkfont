@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "typeface-builder"
+version = "0.1.0"
+description = "Inkscape extension for building typefaces from glyph layers"
+requires-python = ">=3.8"
+# inkex is not on PyPI; it ships with Inkscape. Tests run without it.
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+# Tests must run without inkex installed.
+addopts = "-q"
+
+[tool.setuptools]
+packages = ["lib", "lib.commands"]
